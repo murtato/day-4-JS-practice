@@ -83,7 +83,9 @@ arr[0] = attendee1.name;
 arr[1] = attendee2.name;
 arr[2] = attendee3.name;
 
+arr.pop("Tony");
 console.log(arr)
 
 arr.unshift(Elaine)
+
 
