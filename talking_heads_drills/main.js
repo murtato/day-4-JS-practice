@@ -13,16 +13,17 @@ console.log("afterhours.js linked!");
 ////////////////////////////////////////////////
 
 var album1 = {
-  title: "Talking Heads",
+  title: "Talking Heads 77",
   albumDetails: {
     released: new Date("September 16, 1977"),
-    label:    "Sire",
+    var album1Label = "Sire",
     formats:  ["LP"]
   }
 };
 
 // 1. Retrieve the string "Sire" from album1, and save it in a sensibly named
 //    variable.
+
 
 // 2. Change the title of album1 from "Talking Heads" to "Talking Heads: 77"
 
@@ -31,33 +32,41 @@ var album2 = {
   albumDetails: {
     released: new Date("July 14, 1978"),
     label:    "Sire",
-    formats:  ["LP", "8-track"]
+    formats : ["LP", "8-track"]
   }
 };
 
 var album3 = {
   title: "Fear of Music",
   albumDetails: {
-    released: "August 3, 1979",
+    released : Date("August 3, 1979");
     label:    "Sire",
     formats:  ["Cassette"]
   }
+  album2Formats.push("LP");
 };
 
 // 3. Access album2's formats array and use an array method to add "LP" to
 //    album3's formats
+album2 albumDetails.formats
+album3 albumDetails.formats.push(album2.albumde.formats[0])
 
 // 4. Change the release date of album3 from a string into a Date object
+var newDate = new date ("1979-3-8")
+album3.albumDetails.released = newDate
 
 var album4 = {
   title: "Remain in Light",
   albumDetails: {
+    label : "Sire";
     released: new Date("October 8, 1980"),
     formats: ["Cassette", "LP"]
   }
 };
 
 // 5. Add the label "Sire" to album4's details
+album4.albumDetails.label = "Sire"
+
 
 var album5 = {
   title: "Speaking in Tongues",
@@ -68,6 +77,8 @@ var album5 = {
 };
 
 // 6. Add a 'formats' array to album 5 and add "CD", "Cassette", and "LP"
+album4.albumDetails.formats = ["CD", "Cassette", "LP"]
+
 
 var album6 = {
   title: "Little Creatures",
@@ -79,18 +90,20 @@ var album6 = {
 };
 
 // 7. Make the label "emi" in album6 all uppercase
+album6.albumDetails.labels[1] = album6.albumDetails.labels[1].toUpperCase()
 
 var album7 = {
   title: "True Stories",
   albumDetails: {
     released: new Date("October 7, 1986"),
-    labels:   "Sire, EMI",
+    var labels = "Sire, EMI"
     formats:  ["CD", "cassette", "LP"]
   }
 };
 
 // 8. Convert album7's 'labels' property from the string value
 //    "Sire, EMI" into the array: ["Sire", "EMI"]
+album7.albumDetails.labels = album7.albumDetails.labels.split(", ")
 
 var album8 = {
   title: "Naked",
@@ -117,6 +130,16 @@ var talkingHeadsAlbums = [
 /////////////////////////////////////////////////////
 
 // 1. Create an object literal called `band`.
+
+var band = {
+    name : "Talking Heads";
+    members : "David Byrne"
+    albums : talkingHeadsAlbums
+}
+
+band.members.push("Tiny Weymouth","Chris Franz","Jerry Harrison");
+console.log(band.members)
+["David Byrne"]
 
 // 2. Give it the property `name` and set it to "Talking Heads"
 
@@ -155,6 +178,36 @@ var talkingHeadsAlbums = [
 
 // 4. Check your logic above against the numbers: 0, 1, 2, 6, 7, and 9.
 //    Make sure it always works!
+
+//4
+if (talkingHeadsAlbums.length => 6) {
+  console.log ("Talking Heads were a prolific band")
+}
+else {
+  console.log ("Talking heads didn't have much output")
+}
+if (talkingHeadsAlbums%2===0) {
+  console.log ("The number" "+ talkingHeadsAlbums.length" "is even");
+} else {
+  console.log("The number talkingHeadsAlbums.length is odd")
+};
+
+
+var Y = (talkingHeadsAlbums.length)
+
+  if (talkingHeadsAlbums.length%2===0 && talkingHeadsAlbums.length%3===0) {
+    console.log ("The number Y is divisible by 2 and 3")
+
+  } else if (talkingHeadsAlbums.length%2===0 || talkingHeadsAlbums.length%3===0) {
+    console.log ("The number Y is not divisible by 2 or 3")
+
+  } else if (talkingHeadsAlbums.length%3===0) {
+    console.log ("The number Y is divisible by 3")
+
+  } else if (talkingHeadsAlbums.length%2===0) {
+    console.log ("The number Y is divisible by 2")
+  }
+
 
 /////////////////////////////////////////////////////
 // Part 5: For Loops

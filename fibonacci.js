@@ -77,7 +77,10 @@ attendees = Array ('Mia', 'Albert', 'Tony');
 var attendee1 = {name: "Mia"}
 var attendee2 = {name: "Albert"}
 var attendee3 = {name: "Tony"}
-var arr=[];
+
+{attendee: "Mia", "Albert", "Tony"};
+var arr={};
+arr.
 
 arr[0] = attendee1.name;
 arr[1] = attendee2.name;
@@ -87,5 +90,9 @@ arr.pop("Tony");
 console.log(arr)
 
 arr.unshift(Elaine)
+
+
+
+
 
 
